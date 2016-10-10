@@ -1,16 +1,13 @@
 import React from "react";
 
-
-export default class Footer extends React.Component {
+export default class IP extends React.Component {
   render() {
     return (
-      <footer>
         <div class="row">
           <div class="col-lg-12">
-            <p>Copyright &copy; MeteoIp.net</p>
+            <p>Your ip is  {this.props.ip}</p>
           </div>
         </div>
-      </footer>
     );
   }
 }

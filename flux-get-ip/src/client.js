@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
 import Layout from "./app/Layout";
 import Settings from "./user/Settings";
-import MeteoIp from "./user/MeteoIp";
+import MeteoIp from "./user/MeteoIP";
 
 const app = document.getElementById('app');
 

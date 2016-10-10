@@ -18,7 +18,7 @@ export default class Layout extends React.Component {
         <div class="container" style={containerStyle}>
           <div class="row">
             <div class="col-lg-12">
-              <h1>MeteoIp.net</h1>
+              <h1>MeteoIP.net</h1>
 
               {this.props.children}
 
