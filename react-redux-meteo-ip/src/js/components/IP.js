@@ -2,12 +2,9 @@ import React from "react";
 
 export default class IP extends React.Component {
   render() {
+    const { ip } = this.props;
     return (
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Your ip is  {this.props.ip}</p>
-          </div>
-        </div>
+      <p>This is your IP {ip}</p>
     );
   }
 }
