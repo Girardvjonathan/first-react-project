@@ -33,7 +33,7 @@ export default class MeteoIP extends React.Component {
 
     return (
       <div>
-        <h3>Hi welcome to our website</h3>
+        <h2>Hi, Welcome to our website</h2>
         <IP ip={ip} />
         <Location onClick={this.fetchLocation.bind(this, ip)} location={location} />
         <Meteo onClick={this.fetchMeteo.bind(this, location.city)} meteo={meteo} city={location.city} />
@@ -41,46 +41,3 @@ export default class MeteoIP extends React.Component {
       );
   }
 }
-
-
-// if (_.isEmpty(location)) {
-//   return (
-//     <div>
-//     <h1>This is your IP {ip}</h1>
-//     <button class="btn btn btn-primary btn-lg" onClick={this.fetchLocation.bind(this,ip)}>load Location</button>
-//     </div>
-//   )
-// }
-//
-// var locationInfo = [];
-// for(var key in location){
-//   locationInfo.push(<li key={key}>{key} : {location[key]}</li>);
-// }
-//
-// if (_.isEmpty(meteo)) {
-//   return(
-//     <div>
-//       <h1>This is your IP {ip}</h1>
-//       <h3>This is your Location: </h3>
-//       <ul>
-//         {locationInfo}
-//       </ul>
-//       <button class="btn btn btn-primary btn-lg" onClick={this.fetchMeteo.bind(this, location.city)}>
-//         load Meteo
-//       </button>
-//     </div>
-//   )
-//
-// }
-//
-// return (
-//   <div>
-//   <h1>This is your IP {ip}</h1>
-//   <h3>This is your Location </h3>
-//   <ul>
-//     {locationInfo}
-//   </ul>
-//   <h3>Your current meteo is '{meteo.weather[0].description}' with &nbsp;
-//   {parseFloat((meteo.main.temp -273.15).toFixed(2))} Celsius </h3>
-//   </div>
-// )
